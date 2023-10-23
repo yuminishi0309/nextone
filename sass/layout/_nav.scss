@@ -1,3 +1,50 @@
 //各ファイルは必ず登録済みの変数を最初に読み込みます
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
+
+.gnav {
+    display: none;
+
+
+    &__nav {
+    
+    }
+    
+    &__list {
+    
+    }
+    
+    &__link {
+    
+    }
+}
+
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__top, &__middle, &__bottom   {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 1px;
+        background: $navy;
+    }
+
+    &__top {
+        transform: translateY(-10px);
+    }
+
+    &__bottom {
+        transform: translateY(10px);
+    }
+}

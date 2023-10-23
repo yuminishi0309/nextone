@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <meta name="robots" content="noindex, nofollow">
     <title>株式会社ネクストワン札幌支社</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   
-  <body>
+  <body id="top">
     <div class="wrapper">
       <!-- Header ========================================================================= -->
       <header class="header">
@@ -39,16 +40,22 @@
       <main class="main">
         <div class="wrapper">
           <!-- MV ============================================ -->
-          <div class="mv"></div>
-          <p class="mv__catch">さあ,新しい1歩</p>
-          <p class="mv__sub">NEXTONE SAPPORO Inc.</p>
-          <div class="mv__bnr">
+          <div class="mv">
+            <div class="mv__container">
+              <p class="mv__catch">さあ,新しい1歩</p>
+              <p class="mv__sub">NEXTONE <br>SAPPORO Inc.</p>
+            </div>
             <a href="https://webstudysapporo.com" target="_blank" class="mv__link">
-              <p class="mv__pic"><img src="images/logo_wss.svg" alt="ウェブスタディサッポロロゴ" class="mv__img"></p>
-              <p class="mv__btn">WSSサイトはこちら</p>
-              <!-- 矢印ボタン -->
-              <div class="mv__btn">
-                <svg width="18.899" height="9.899" viewBox="0 0 18.899 9.899"><g transform="translate(-341 -517.05)"><line x2="18" transform="translate(341 522)" fill="none" stroke="#e4e14c" stroke-width="1"/><g transform="translate(479.754 -106.971) rotate(45)"><line x2="7" transform="translate(353 530)" fill="none" stroke="#e4e14c" stroke-width="1"/><line x2="7" transform="translate(359.5 529.5) rotate(90)" fill="none" stroke="#e4e14c" stroke-width="1"/></g></g></svg>
+              <div class="mv__bnr">
+                <div class="mv__box">
+                  <p class="mv__pic"><img src="images/logo_wss.svg" alt="ウェブスタディサッポロロゴ" class="mv__img"></p>
+                  <p class="mv__txt">WSSサイトはこちら</p>
+                </div>
+                
+                <!-- 矢印ボタン -->
+                <div class="mv__btn">
+                  <svg class="mv__arrow" viewBox="0 0 18.899 9.899"><g transform="translate(-341 -517.05)"><line x2="18" transform="translate(341 522)" fill="none" stroke-width="1"/><g transform="translate(479.754 -106.971) rotate(45)"><line x2="7" transform="translate(353 530)" fill="none" stroke-width="1"/><line x2="7" transform="translate(359.5 529.5) rotate(90)" fill="none" stroke-width="1"/></g></g></svg>
+                </div>
               </div>
             </a>
           </div>
@@ -57,7 +64,7 @@
             <h2 class="about__ttl">ABOUT US</h2>
             <p class="about__jpn">会社概要</p>
             <div class="about__bg"></div>
-            <div class="abour__container">
+            <div class="about__container">
               <p class="about__sub">未経験から<br>Web制作の<br>世界へ</p>
               <p class="about__txt">株式会社ネクストワン札幌支社では、WebStudySapporo(ウェブスタディサッポロ)の名称で
                 求職者支援訓練校（職業訓練校）を運営しており、Photoshopや各種言語を学習し、
@@ -134,7 +141,7 @@
                 </div>
               </dl>
               <div class="profile__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5829.571067629913!2d141.346765!3d43.066978000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299ff7809a8b%3A0xc56ed83d88dc4a09!2zV1NTIHwgV2ViU3R1ZHlTYXBwb3JvKOOCpuOCp-ODluOCueOCv-ODh-OCo-OCteODg-ODneODrSkgd2Vi44OH44K244Kk44Oz44Gu6IG35qWt6KiT57e05qCh!5e0!3m2!1sja!2sus!4v1697952192358!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5829.571067629913!2d141.346765!3d43.066978000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299ff7809a8b%3A0xc56ed83d88dc4a09!2zV1NTIHwgV2ViU3R1ZHlTYXBwb3JvKOOCpuOCp-ODluOCueOCv-ODh-OCo-OCteODg-ODneODrSkgd2Vi44OH44K244Kk44Oz44Gu6IG35qWt6KiT57e05qCh!5e0!3m2!1sja!2sus!4v1697952192358!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
               </div>
             </div>
           </section>
@@ -176,7 +183,7 @@
           </div>
         </div>
         <p class="footer__privacy">個人情報保護方針について</p>
-        <p class="footer__copy"><small class="footer__small">&;copy NEXTONE SAPPORO.Inc</small></p>
+        <p class="footer__copy"><small class="footer__small">&copy; NEXTONE SAPPORO.Inc</small></p>
       </footer>
     </div>
     <script src="js/function.js"></script>
