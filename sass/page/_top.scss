@@ -13,18 +13,43 @@
         background: url(../images/top/mv_sample.jpg) center center / cover no-repeat;
         height: 110vw;
 
+            @media screen and (min-width: 768px) {
+                height: 100vw;
+            }
+            @media screen and (min-width: 1024px) {
+                height: 100vh;
+
+            }
+
         &__container {
             position: absolute;
             top: 200px;
             left: 20px;
+
+            @media screen and (min-width: 768px) {
+                top: 70vw;
+                left: 5%;
+            }
+            @media screen and (min-width: 1024px) {
+                top: 38vh;
+                left: 8%;
+            }
         }
         
         &__catch {
             margin-bottom: 20px;
             color: $white;
             font-size: 40px;
-            font-weight: 300;
-            
+            font-weight: 100;
+
+            @media screen and (min-width: 768px) {
+                font-size: 48px;
+            }
+            @media screen and (min-width: 1024px) {
+                margin-left: -14px;
+                margin-bottom: 56px;
+                font-size: 120px;
+            }
         }
         
         &__sub {
@@ -34,12 +59,18 @@
             font-weight: 600;
             letter-spacing: 0.03em;
             line-height: 1.33;
-        
+
+            @media screen and (min-width: 1024px) {
+                font-size: 60px;
+            }
+        }
+
+        &__br {
+            display: none;
         }
         
         &__link {
             color: $white;
-            
 
             &:hover {
                 .mv__btn {
@@ -51,7 +82,6 @@
                     transform: translateX(4px);
                     
                 }
-
             }
         }
 
@@ -66,10 +96,22 @@
             height: 130px;
             background: $blue;
         }
+
+        &__box {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+                margin-left: 5%;
+            }
+        }
         
         &__pic {
             width: 150px;
             margin-bottom: 10px;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0;
+            }
         
         }
         
