@@ -40,5 +40,4 @@ gnav.addEventListener('click', () => {
     for (let i = 0; i < gnavLinks.length; i++) {
         gnavLinks[i].classList.remove('gnavLinkPc')
     }
-
 });

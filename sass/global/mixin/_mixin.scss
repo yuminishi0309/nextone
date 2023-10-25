@@ -1,4 +1,82 @@
 // settingフォルダの変数を読み込みます
-
 @use "../setting" as *;
+
+// 矢印ボタン  =============================================
+//ボタン丸部分
+@mixin btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $yellow;
+    border-radius: 50%;
+    transition: .3s;
+
+    @media screen and (min-width: 1024px) {
+        width: 51px;
+        height: 51px;
+    }
+}
+//ボタン矢印部分
+@mixin arrow {
+    width: 8px;
+    stroke: $yellow;
+    transition: .3s;
+
+    @media screen and (min-width: 1024px) {
+        width: 18.9px;
+    }
+}
+// hover:ボタン丸部分アクション
+@mixin btnAction {
+    background: $white;
+    border: 1px solid $white;
+}
+// hover:矢印部分アクション
+@mixin arrowAction {
+    stroke: $navy;
+    transform: translateX(4px);
+    
+    @media screen and (min-width: 1024px) {
+        transform: translateX(8px);
+    }
+}
+
+// トップページセクションタイトル  ==========================
+// セクションタイトル
+@mixin TopSecTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: $Poppins;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+// タイトル装飾
+@mixin TopSecTitleDeco ($left: 0) {
+    position: absolute;
+    left: ($left);
+    content: "";
+    width: 20px;
+    height: 2px;
+    // 色は後ほど変更**********
+    background: red;
+}
+// タイトル日本語部
+@mixin TopSecTitleJpn ($left: 0) {
+    font-size: 14px;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        top: 0;
+        left: ($left);
+    }
+}
 

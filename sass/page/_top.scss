@@ -66,7 +66,9 @@
         }
 
         &__br {
-            display: none;
+            @media screen and (min-width: 1024px) {
+                display: none;
+            }
         }
         
         &__link {
@@ -74,13 +76,10 @@
 
             &:hover {
                 .mv__btn {
-                    background: $white;
-                    border: 1px solid $white;
+                    @include btnAction;
                 }
                 .mv__arrow {
-                    stroke: $navy;
-                    transform: translateX(4px);
-                    
+                    @include arrowAction;
                 }
             }
         }
@@ -95,6 +94,13 @@
             width: 89%;
             height: 130px;
             background: $blue;
+
+            @media screen and (min-width: 1024px) {
+                bottom: 0;
+                width: 536px;
+                height: 200px;
+                background: hsla(210, 64%, 40%, 0.8);
+            }
         }
 
         &__box {
@@ -102,6 +108,10 @@
                 display: flex;
                 align-items: center;
                 margin-left: 5%;
+            }
+            @media screen and (min-width: 1024px) {
+                display: block;
+                margin-left: 28%;
             }
         }
         
@@ -112,7 +122,11 @@
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
             }
-        
+            @media screen and (min-width: 1024px) {
+                width: 252px;
+                margin-left: -14px;
+                margin-bottom: 24px;
+            }
         }
         
         &__img {
@@ -124,33 +138,87 @@
         &__txt {
             margin-left: 20px;
             font-size: 13px;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 16px;
+                margin-left: 18px;
+            }
         }
         
         &__btn {
+            @include btn;
+
             position: relative;
             top: 0;
             right: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
-            border: 1px solid $yellow;
-            border-radius: 50%;
-            transition: .3s;
+
+            @media screen and (min-width: 1024px) {
+                right: 60px;
+            }
         }
 
         &__arrow {
-            width: 8px;
-            stroke: $yellow;
-            transition: .3s;
+            @include arrow;
         }
-
+        
     }
 
     // About Section ==============================================================
     .about {
+
+        // 次：Tabバージョンから
+
         padding-top: 144px;
+        margin-bottom: 120px;
+        
+        &__bg {
+            height: 90vh;
+            padding:30px 5% 0;
+            background: url(../images/top/about_img1.jpg) top center / cover;
+        }
+
+        &__unit {
+            margin-bottom: 24px;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &__ttl {
+            @include TopSecTitle;
+
+            &::after {
+                @include TopSecTitleDeco(147px);
+            }
+        }
+        
+        &__jpn {
+            @include TopSecTitleJpn(61px);
+        }
+        
+        &__container {
+        
+        }
+        
+        &__sub {
+            margin-bottom: 192px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+        
+        &__txt {
+            font-size: 15px;
+            line-height: 2;
+        }
+
+    }
+    // WSS Section ==============================================================
+    .wss {
+        padding-top: 144px;
+
 
         &__ttl {
         
@@ -160,7 +228,7 @@
         
         }
         
-        &__bg {
+        &__sub {
         
         }
         
@@ -168,15 +236,32 @@
         
         }
         
-        &__sub {
+        &__box {
+        
+        }
+        
+        &__filter {
+        
+        }
+        
+        &__heading {
+        
+        }
+        
+        &__lead {
         
         }
         
         &__txt {
         
         }
-
+        
+        &__btn {
+        
+        }
     }
+    
+    
     
     
     
