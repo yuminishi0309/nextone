@@ -165,16 +165,22 @@
 
     // About Section ==============================================================
     .about {
-
-        // 次：Tabバージョンから
-
         padding-top: 144px;
         margin-bottom: 120px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 72px;
+        }
         
         &__bg {
+            position: relative;
             height: 90vh;
             padding:30px 5% 0;
             background: url(../images/top/about_img1.jpg) top center / cover;
+
+            @media screen and (min-width: 768px) {
+                height: 50vh;
+            }
         }
 
         &__unit {
@@ -203,15 +209,22 @@
         }
         
         &__sub {
-            margin-bottom: 192px;
             font-size: 30px;
             font-weight: 600;
             line-height: 1.7;
         }
         
         &__txt {
+            position: absolute;
+            bottom: -120px;
+            left: 0;
+            padding: 0 5%;
             font-size: 15px;
             line-height: 2;
+
+            @media screen and (min-width: 768px) {
+                bottom: -72px;
+            }
         }
 
     }
