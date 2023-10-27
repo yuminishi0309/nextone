@@ -12,13 +12,14 @@
         position: relative;
         background: url(../images/top/mv_sample.jpg) center center / cover no-repeat;
         height: 110vw;
+        margin-bottom: 84px;
 
             @media screen and (min-width: 768px) {
                 height: 100vw;
             }
             @media screen and (min-width: 1024px) {
                 height: 100vh;
-
+                margin-bottom: 120px;
             }
 
         &__container {
@@ -160,16 +161,19 @@
         &__arrow {
             @include arrow;
         }
-        
     }
 
     // About Section ==============================================================
     .about {
-        padding-top: 144px;
-        margin-bottom: 120px;
+        padding-top: 60px;
+        margin-bottom: 200px;
 
         @media screen and (min-width: 768px) {
-            margin-bottom: 72px;
+
+        }
+        @media screen and (min-width: 1024px) {
+            padding-top: 80px;
+            margin-bottom: 320px;
         }
         
         &__bg {
@@ -256,8 +260,11 @@
     }
     // WSS Section ==============================================================
     .wss {
-        padding-top: 144px;
+        margin-bottom: 72px;
 
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 200px;
+        }
 
         &__ttl {
         
