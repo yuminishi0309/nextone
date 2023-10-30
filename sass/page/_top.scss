@@ -75,6 +75,7 @@
         &__link {
             color: $white;
 
+            // バナーホバー時の矢印ボタンアクション
             &:hover {
                 .mv__btn {
                     @include btnAction;
@@ -266,44 +267,126 @@
             margin-bottom: 200px;
         }
 
-        &__ttl {
+        &__unit {
+            padding: 0 5%;
+            margin-bottom: 24px;
+            
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
+            @media screen and (min-width: 1024px) {
+                padding: 0 16.7%;
+            }
+        }
         
+        &__ttl {
+            @include TopSecTitle;
+            
+            &::after {
+                @include TopSecTitleDeco(76px);
+            }
         }
         
         &__jpn {
-        
+            @include TopSecTitleJpn(61px);
         }
         
         &__sub {
-        
+            padding: 0 5%;
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 2;
+            
+            @media screen and (min-width: 1024px) {
+                padding: 0 16.7%;
+            }
         }
         
-        &__container {
-        
+        &__wrap {
+
+            @media screen and (min-width: 1024px) {
+                display: flex;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &:hover {
+                .wss__filter {
+                    background: rgba(37, 103, 169, 0.3);
+                }
+                .wss__btn {
+                    @include btnAction;
+                }
+                .wss__arrow {
+                    @include arrowAction;
+                }
+            }
+        }
+
+        &__container01,
+        &__container02 {
+            width: 100%;
+            height: 100%;
+            color: $white;
+            
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
         
-        &__box {
-        
+        &__container01 {
+            background: url(../images/top/wss_img1.jpg) center center / cover;
+        }
+
+        &__container02 {
+            background: url(../images/top/wss_img2.jpg) center center / cover;
         }
         
         &__filter {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(37, 103, 169, 0.9);
+            transition: .6s;
+        }
         
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+
+            @media screen and (min-width: 768px) {
+                width: 37%;
+            }
         }
         
         &__heading {
-        
+            margin: 44px 0;
         }
         
         &__lead {
-        
+            margin-bottom: 38px;
         }
         
         &__txt {
-        
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 2;
         }
         
         &__btn {
+            @include btn;
+        }
         
+        &__arrow {
+            @include arrow;
         }
     }
     
