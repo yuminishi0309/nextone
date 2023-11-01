@@ -148,7 +148,7 @@
         }
         
         &__btn {
-            @include btn;
+            @include btn(30px, 51px);
 
             position: relative;
             top: 0;
@@ -167,10 +167,10 @@
     // About Section ==============================================================
     .about {
         padding-top: 60px;
-        margin-bottom: 200px;
-
+        margin-bottom: 240px;
+        
         @media screen and (min-width: 768px) {
-
+            margin-bottom: 200px;
         }
         @media screen and (min-width: 1024px) {
             padding-top: 80px;
@@ -244,6 +244,7 @@
             bottom: -120px;
             left: 0;
             padding: 0 5%;
+            text-align: justify;
             font-size: 15px;
             line-height: 2;
 
@@ -261,7 +262,7 @@
     }
     // WSS Section ==============================================================
     .wss {
-        margin-bottom: 72px;
+        margin-bottom: 80px;
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 200px;
@@ -295,8 +296,10 @@
         &__sub {
             padding: 0 5%;
             margin-bottom: 40px;
-            font-size: 15px;
-            line-height: 2;
+            text-align: justify;
+            font-size: 13px;
+            line-height: 1.6;
+            opacity: .6;
             
             @media screen and (min-width: 1024px) {
                 padding: 0 16.7%;
@@ -312,6 +315,11 @@
 
         &__link {
             text-decoration: none;
+
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+                height: 680px;
+            }
 
             &:hover {
                 .wss__filter {
@@ -357,34 +365,106 @@
         }
         
         &__box {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80%;
+            width: 88%;
+            max-width: 330px;
+            padding: 68px 0;
 
             @media screen and (min-width: 768px) {
-                width: 37%;
+                // width: 40%;
+            }
+            @media screen and (min-width: 1024px) {
+                min-width: 300px;
+                padding: 120px 0;
             }
         }
-        
+
         &__heading {
-            margin: 44px 0;
+            text-align: center;
+            // margin: 108px 0 40px;
+            margin: 40px 0;
+            font-size: 24px;
+            font-weight: 400;
+
+            &::before {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: $yellow;
+
+                @media screen and (min-width: 1024px) {
+                    top: 120px;
+                }
+            }
+        }
+
+        &__br {
+            display: none;
         }
         
         &__lead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             margin-bottom: 38px;
+            font-size: 16px;
+            font-weight: 400;
+
+            &::before {
+                display: block;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 10%;
+                height: 1px;
+                background: $yellow;
+
+                @media screen and (min-width: 1024px) {
+                    width: 8%;
+                }
+            }
+
+            &::after {
+                display: block;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 10%;
+                height: 1px;
+                background: $yellow;
+
+                @media screen and (min-width: 1024px) {
+                    width: 8%;
+                }
+            }
         }
         
         &__txt {
+            margin-bottom: 24px;
             font-size: 13px;
             font-weight: 400;
             line-height: 2;
+            opacity: .6;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 38px;
+            }
+            @media screen and (min-width: 1024px) {
+                flex-grow: 1;
+            }
         }
         
         &__btn {
             @include btn;
         }
-        
+
         &__arrow {
             @include arrow;
         }

@@ -3,19 +3,19 @@
 
 // 矢印ボタン  =============================================
 //ボタン丸部分
-@mixin btn {
+@mixin btn ($value: 51px, $value_pc: 80px){
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: $value;
+    height: $value;
     border: 1px solid $yellow;
     border-radius: 50%;
     transition: .3s;
 
     @media screen and (min-width: 1024px) {
-        width: 51px;
-        height: 51px;
+        width: $value_pc;
+        height: $value_pc;
     }
 }
 //ボタン矢印部分
