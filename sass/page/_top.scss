@@ -588,10 +588,11 @@
     // Profile Section ==============================================================
     .profile {
         padding: 0 5%;
-        margin-top: 60px;
+        margin: 60px 0 80px;
         
         @media screen and (min-width: 1024px) {
             padding: 80px 16.7% 0;
+            margin-bottom: 200px;
         }
 
         &::before {
@@ -610,6 +611,9 @@
             @media screen and (min-width: 768px) {
                 display: flex;
                 align-items: center;
+            }
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 80px;
             }
         }
         
@@ -635,8 +639,11 @@
         &__dl {
             margin-bottom: 17px;
             font-size: 14px;
+            line-height: 2;
     
             @media screen and (min-width: 1024px) {
+                width: 47%;
+                margin-bottom: 0;
                 font-size: 16px;
             }
         }
@@ -647,7 +654,12 @@
             
             &:last-child {
                 border-bottom: 1px dotted $blue;
-                
+            }
+
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                align-items: center;
+                height: 20%;
             }
 
             
@@ -655,16 +667,40 @@
         
         &__dt {
             margin-bottom: 12px;
+
+            @media screen and (min-width: 1024px) {
+                width: 40%;
+                min-width: 144px;
+                margin-bottom: 0;
+            }
         }
         
         &__dd {
             font-weight: 300;
-        
         }
-        
+
+        &__map {
+            @media screen and (min-width: 1024px) {
+                width: 40%;
+            }
+        }
+
         &__gmap {
-         width: 100%;   
-        
+            width: 100%;   
+        }
+    }
+
+    .bv {
+        display: block;
+        background: url(../images/top/bv.jpg) center center /cover;
+        width: 100%;
+        height: 32vh;
+        margin-bottom: 80px;
+
+        @media screen and (min-width: 1024px) {
+            height: 44vh;
+            max-height: 480px;
+            margin-bottom: 200px;
         }
     }
     
