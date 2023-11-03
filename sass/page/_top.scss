@@ -160,7 +160,7 @@
         }
 
         &__arrow {
-            @include arrow;
+            @include arrow(8px);
         }
     }
 
@@ -206,7 +206,7 @@
             @include TopSecTitle;
 
             &::after {
-                @include TopSecTitleDeco(147px);
+                @include TopSecTitleDeco(147px, 167px);
             }
         }
         
@@ -285,7 +285,7 @@
             @include TopSecTitle;
             
             &::after {
-                @include TopSecTitleDeco(76px);
+                @include TopSecTitleDeco(76px, 86px);
             }
         }
         
@@ -373,9 +373,6 @@
             max-width: 330px;
             padding: 68px 0;
 
-            @media screen and (min-width: 768px) {
-                // width: 40%;
-            }
             @media screen and (min-width: 1024px) {
                 min-width: 300px;
                 padding: 120px 0;
@@ -384,7 +381,6 @@
 
         &__heading {
             text-align: center;
-            // margin: 108px 0 40px;
             margin: 40px 0;
             font-size: 24px;
             font-weight: 400;
@@ -448,6 +444,7 @@
         
         &__txt {
             margin-bottom: 24px;
+            text-align: justify;
             font-size: 13px;
             font-weight: 400;
             line-height: 2;
@@ -469,7 +466,215 @@
             @include arrow;
         }
     }
+    // History Section ==============================================================
+    .history {
+        margin-bottom: 80px;
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 160px;
+        }
+
+        &__wrap {
+                padding: 0 5%;
+                
+                @media screen and (min-width: 1024px) {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 83%;
+                    padding: 0;
+                    margin-left: auto;
+                }
+
+            &::before {
+                display: block;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: $yellow;
+
+                @media screen and (min-width: 1024px) {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+
+        &__unit {
+            margin-top: 60px;
+            margin-bottom: 24px;
+            
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
+            @media screen and (min-width: 1024px) {
+                // padding: 0 16.7%;
+                margin-bottom: 56px;
+            }
+        }
+        
+        &__ttl {
+            @include TopSecTitle;
+            
+            &::after {
+                @include TopSecTitleDeco(263px, 302px);
+            }
+        }
+        
+        &__jpn {
+            @include TopSecTitleJpn(61px);
+        }
+        
+        &__txt {
+            margin-bottom: 40px;
+            text-align: justify;
+            font-size: 13px;
+            line-height: 1.6;
+            opacity: .6;
+            
+            @media screen and (min-width: 1024px) {
+                // padding: 0 16.7%;
+                margin-bottom: 80px;
+                font-size: 16px;
+                line-height: 2.5;
+
+            }
+        
+        }
+
+        &__link {
+            display: inline-block;
+            margin-bottom: 40px;
+            
+        }
+        
+        &__btn {
+            @include btn;
+
+            border: 1px solid $navy;
+
+            &:hover {
+                .history__btn {
+                    @include btnAction;
+                }
+                .history__arrow {
+                    @include arrowAction;
+                }
+            }
+        }
+        
+        &__arrow {
+            @include arrow;
+            stroke: $navy;
+        }
+        
+        &__pic {
+            background: url(../images/top/history_img1.jpg) center center / cover no-repeat;
+            height: 50vw;
+
+            @media screen and (min-width: 1024px) {
+                width: 58%;
+                max-width: 400px;
+                height: 560px;
+                margin-top: 60px;
+            }
+            @media screen and (min-width: 1300px) {
+                max-width: none;
+            }
+        }
+    }
+    // Profile Section ==============================================================
+    .profile {
+        padding: 0 5%;
+        margin-top: 60px;
+        
+        @media screen and (min-width: 1024px) {
+            padding: 80px 16.7% 0;
+        }
+
+        &::before {
+            display: block;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: $yellow;
+        }
+
+        &__unit {
+            margin: 60px 0 34px 0;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        &__ttl {
+            @include TopSecTitle;
+
+            &::after {
+                @include TopSecTitleDeco(250px, 290px);
+            }
+        }
+        
+        &__jpn {
+            @include TopSecTitleJpn(61px);
+        }
+        
+        &__container {
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        &__dl {
+            margin-bottom: 17px;
+            font-size: 14px;
     
+            @media screen and (min-width: 1024px) {
+                font-size: 16px;
+            }
+        }
+        
+        &__box {
+            padding: 25px 0;
+            border-top: 1px dotted $blue;
+            
+            &:last-child {
+                border-bottom: 1px dotted $blue;
+                
+            }
+
+            
+        }
+        
+        &__dt {
+            margin-bottom: 12px;
+        }
+        
+        &__dd {
+            font-weight: 300;
+        
+        }
+        
+        &__gmap {
+         width: 100%;   
+        
+        }
+    }
+    
+    
+    
+
+    
+    
+    
+
     
     
     
