@@ -3,60 +3,105 @@
 @use "../global" as *;
 
 .footer {
+    padding: 80px 5%;
     background: $navy;
     color: $white;
 
-    // &__logo {
-    //     width: 27%;
+    &__logo {
+        width: 200px;
+        margin-bottom: 20px;
+        
+        @media screen and (min-width: 768px) {
+            width: 320px;
+            margin-bottom: 40px;
+          
+        }
+    }
     
-    // }
+    &__link--logo {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     
-    // &__link {
-    //     display: block;
-    
-    // }
-    
-    // &__img {
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
-    
-    // }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     
     &__container {
     
     }
     
-    &__box {
+    &__box--contact {
     
     }
     
     &__contact {
-    
-    }
-    
-    &__tel {
+        margin-bottom: 28px;
+        font-weight: 700;
     
     }
     
     &__txt {
+        margin-bottom: 1.3em;
+        font-size: 13px;
+        font-weight: 300;
     
     }
-    
-    &__mail {
-    
-    }
-    
+
     &__unit {
-    
+        display: flex;
+        gap: 16px;
+        margin-bottom: 70px;
+
+        @media screen and (min-width: 1024px) {
+            gap: 30px;
+          
+        }
     }
     
     &__twitter {
+        height: 24px;
+
+        @media screen and (min-width: 1024px) {
+            height: 32px;
+        }
+
     
     }
     
     &__instagram {
+        height: 24px;
+
+        @media screen and (min-width: 1024px) {
+            height: 32px;
+        }
     
+    }
+
+    &__link--svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__svg {
+        width: 100%;
+        height: 100%;
+        fill: $white;
+    }
+
+    &__box--content {
+        display: none;
+
     }
     
     &__content {
@@ -68,14 +113,28 @@
     }
     
     &__list {
+        list-style-type: none;
     
     }
     
     &__privacy {
-    
+        display: inline-block;
+        padding-bottom: 4px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid $white;
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    &__link--privacy {
+        display: block;
+        color: $white;
+        text-decoration: none;
     }
     
     &__copy {
+        font-size: 10px;
+        font-weight: 300;
     
     }
     
