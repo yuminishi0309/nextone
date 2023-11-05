@@ -10,7 +10,7 @@
     // MV ==============================================================
     .mv {
         position: relative;
-        background: url(../images/top/mv_sample.jpg) center center / cover no-repeat;
+        background: url(../images/top/mv.jpg) center center / cover no-repeat;
         height: 110vw;
         margin-bottom: 84px;
 
@@ -262,9 +262,11 @@
     }
     // WSS Section ==============================================================
     .wss {
+        margin-top: 60px;
         margin-bottom: 80px;
 
         @media screen and (min-width: 1024px) {
+            margin-top: 80px;
             margin-bottom: 200px;
         }
 
@@ -399,10 +401,6 @@
                     top: 120px;
                 }
             }
-        }
-
-        &__br {
-            display: none;
         }
         
         &__lead {
