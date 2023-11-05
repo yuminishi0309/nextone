@@ -382,6 +382,7 @@
         &__heading {
             text-align: center;
             margin: 40px 0;
+            font-family: $Poppins;
             font-size: 24px;
             font-weight: 400;
 
@@ -667,6 +668,7 @@
         
         &__dt {
             margin-bottom: 12px;
+            font-family: $Poppins;
 
             @media screen and (min-width: 1024px) {
                 width: 40%;
