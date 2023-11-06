@@ -307,7 +307,6 @@
         }
         
         &__wrap {
-
             @media screen and (min-width: 1024px) {
                 display: flex;
             }
@@ -466,6 +465,7 @@
     // History Section ==============================================================
     .history {
         margin-bottom: 80px;
+
         @media screen and (min-width: 1024px) {
             margin-bottom: 160px;
         }
@@ -560,6 +560,7 @@
         
         &__arrow {
             @include arrow;
+
             stroke: $navy;
         }
         
@@ -645,17 +646,15 @@
             padding: 25px 0;
             border-top: 1px dotted $blue;
             
-            &:last-child {
-                border-bottom: 1px dotted $blue;
-            }
-
             @media screen and (min-width: 1024px) {
                 display: flex;
                 align-items: center;
                 height: 20%;
             }
-
             
+            &:last-child {
+                border-bottom: 1px dotted $blue;
+            }
         }
         
         &__dt {

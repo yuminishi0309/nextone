@@ -40,10 +40,6 @@
     
     }
     
-    &__box--contact {
-    
-    }
-    
     &__contact {
         margin-bottom: 28px;
         font-family: $Poppins;
@@ -55,7 +51,6 @@
         @media screen and (min-width: 1024px) {
             font-size: 28px;
         }
-    
     }
     
     &__txt {
@@ -85,8 +80,6 @@
         @media screen and (min-width: 1024px) {
             height: 32px;
         }
-
-    
     }
     
     &__instagram {
@@ -122,33 +115,21 @@
             display: block;
             font-size: 10px;
             font-weight: 300;
-
-            // 次：ここのPC版設定から
-
-
         }
-
     }
     
     &__content {
         @media screen and (min-width: 1024px) {
             margin-bottom: 26px;
         }
-    
     }
-    
-    &__nav {
-    
-    }
-    
+
     &__list {
+        list-style-type: none;
+
         @media screen and (min-width: 1024px) {
             margin-bottom: 40px;
-          
-
         }
-        list-style-type: none;
-    
     }
 
     &__link {
@@ -195,11 +176,6 @@
         @media screen and (min-width: 1024px) {
             font-size: 11px;
         }
-    
-    }
-    
-    &__small {
-    
     }
 }
 

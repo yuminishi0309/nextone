@@ -47,7 +47,6 @@
         @media screen and (min-width: 1024px) {
             padding: 0 8.4%;
             margin-bottom: 220px;
-          
         }
 
         &__pic {
@@ -56,7 +55,6 @@
             @media screen and (min-width: 1024px) {
                 width: 50%;
                 margin-bottom: 0;
-
             }
         }
 
@@ -64,7 +62,6 @@
             @media screen and (min-width: 1024px) {
                 display: flex;
                 margin-bottom: 100px;
-              
             }
         }
         &__box {
@@ -73,7 +70,6 @@
                 align-items: center;
                 width: 50%;
                 padding: 0 7% 0;
-              
             }
         }
 
@@ -89,7 +85,6 @@
                 margin: 40px 0;
                 font-size: 32px;
                 font-weight: 500;
-              
             }
 
             &::before {
@@ -117,9 +112,7 @@
             font-weight: 400;
 
             @media screen and (min-width: 1024px) {
-                // min-width: 300px;
                 margin-bottom: 64px;
-              
             }
 
             &::before {
@@ -166,10 +159,5 @@
                 flex-grow: 1;
             }
         }
-
-
-
     }
-
-
 }
