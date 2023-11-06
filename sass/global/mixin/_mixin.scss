@@ -68,8 +68,7 @@
     content: "";
     width: 20px;
     height: 2px;
-    // 色は後ほど変更**********
-    background: red;
+    background: $yellow;
 
     @media screen and (min-width: 1024px) {
         left: $left_pc;
