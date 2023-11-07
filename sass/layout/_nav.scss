@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
     width: 60px;
-    height: 60px;
+    height: 100%;
     border-left: 1px solid $navy;
     z-index: 1;
     
@@ -84,7 +84,6 @@
     
     @media screen and (min-width: 1024px) {
         width: 100px;
-        height: 100px;
     }
 
     &__top, &__middle, &__bottom   {

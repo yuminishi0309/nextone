@@ -41,3 +41,43 @@ gnav.addEventListener('click', () => {
         gnavLinks[i].classList.remove('gnavLinkPc')
     }
 });
+
+// リサイズヘッダー  =========================================
+const header = document.querySelector('#header');
+const mv = document.querySelector('#mv');
+const mvHeight = mv.offsetHeight;
+window.addEventListener('scroll', ()=> {
+    const ST = window.scrollY;
+    if(ST > mvHeight) {
+        header.classList.add('resizeHeader');
+    } else {
+        header.classList.remove('resizeHeader');
+    }
+});
+// レスポンシブ対応
+const breakpointTab = window.matchMedia("(max-width:768px)"); 
+const breakpointPC = window.matchMedia("(max-width:1024px)"); 
+breakpointTab.addEventListener("change", () => {
+    window.location.reload();
+});
+breakpointPC.addEventListener("change", () => {
+    window.location.reload();
+});
+
+// スムーススクロール  =========================================
+const smoothScroll = document.querySelectorAll('a[href^="#"]');
+for (let i = 0; i < smoothScroll.length; i++) {
+    smoothScroll[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = smoothScroll[i].getAttribute('href');
+        const targetElement = document.getElementById(href.replace('#', ''));
+        const rect = targetElement.getBoundingClientRect().top;
+        const ST = window.scrollY;
+        const target = rect + ST;
+
+        window.scrollTo({
+            top: target,
+            behavior: 'smooth',
+        });
+    });
+}
