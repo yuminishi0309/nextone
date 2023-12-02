@@ -36,7 +36,7 @@
     }
     
     &__list {
-        margin-bottom: 48px;
+        margin-bottom: 40px;
 
         @media screen and (min-width: 768px) {
             margin-bottom: 64px;
@@ -48,6 +48,8 @@
     }
     
     &__link {
+        display: block;
+        padding: 10px 0;
         color: $white;
         font-family: $Poppins;
         font-size: 30px;

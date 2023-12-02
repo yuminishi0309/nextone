@@ -2,10 +2,10 @@
 
 #wss {
     .mv {
-        padding: 110px 5%;
+        padding: 110px 5% 50px;
 
         @media screen and (min-width: 1024px) {
-            padding: 200px 8.4%;
+            padding: 200px 8.4% 120px;
         }
 
         &__ttl {
@@ -59,8 +59,11 @@
         }
 
         &__container {
+            padding-top: 60px;
+
             @media screen and (min-width: 1024px) {
                 display: flex;
+                padding-top: 80px;
                 margin-bottom: 100px;
             }
         }
